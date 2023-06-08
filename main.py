@@ -6,16 +6,16 @@ from maviyaka import MaviYaka
 from beyazyaka import BeyazYaka
 
 # Sadece insan sınıfı için 2 nesne oluşturma
-insan1 = Insan("12345678910", "Ahmet", "Yılmaz", 30, "Erkek", "Türk")
-insan2 = Insan("98765432100", "Ayşe", "Kara", 25, "Kadın", "Türk")
+insan1 = Insan("12345678910", "Ahmet", "Ayik", 30, "Erkek", "Türk")
+insan2 = Insan("98765432100", "Mehmet", "Ayik", 25, "Erkek", "Türk")
 
 # İnsan nesnelerini __str__ metoduyla bilgilerini yazdırma
 print(insan1)
 print(insan2)
 
 # İşsiz sınıfı için 3 nesne oluşturma
-issiz1 = Issiz("12345678910", "Ali", "Demir", 28, "Erkek", "Türk", {"mavi yaka": [2018], "beyaz yaka": [2019, 2020]})
-issiz2 = Issiz("98765432100", "Ayşe", "Yılmaz", 32, "Kadın", "Türk", {"beyaz yaka": [2021]})
+issiz1 = Issiz("12345678910", "Elif", "Ayik", 28, "Kadin", "Türk", {"mavi yaka": [2018], "beyaz yaka": [2019, 2020]})
+issiz2 = Issiz("98765432100", "Dila", "Turkar", 32, "Kadin", "Türk", {"beyaz yaka": [2021]})
 issiz3 = Issiz("55555555555", "Mehmet", "Kara", 26, "Erkek", "Türk", {"mavi yaka": [2017, 2018, 2019]})
 
 # İşsiz nesnelerini __str__ metoduyla bilgilerini yazdırma
@@ -24,9 +24,9 @@ print(issiz2)
 print(issiz3)
 
 # Çalışan sınıfı için 3 nesne oluşturma
-calisan1 = Calisan("12345678910", "Ayşe", "Yılmaz", 28, "Kadın", "Türk", "teknoloji", 36, 12000)
-calisan2 = Calisan("98765432100", "Ahmet", "Kara", 32, "Erkek", "Türk", "muhasebe", 48, 18000)
-calisan3 = Calisan("55555555555", "Mehmet", "Demir", 26, "Erkek", "Türk", "inşaat", 24, 9000)
+calisan1 = Calisan("12345678910", "Burcu", "Guzelyali", 28, "Kadin", "Türk", "teknoloji", 36, 12000)
+calisan2 = Calisan("98765432100", "Ulas", "Ermis", 32, "Erkek", "Türk", "muhasebe", 48, 18000)
+calisan3 = Calisan("55555555555", "Ceren", "Erbas", 18, "Kadin", "Türk", "inşaat", 24, 9000)
 
 # Çalışan nesnelerini __str__ metoduyla bilgilerini yazdırma
 print(calisan1)
@@ -34,9 +34,9 @@ print(calisan2)
 print(calisan3)
 
 # Mavi yaka sınıfı için 3 nesne oluşturma
-maviyaka1 = MaviYaka("12345678910", "Ali", "Yılmaz", 28, "Erkek", "Türk", "teknoloji", 36, 12000, 0.2)
-maviyaka2 = MaviYaka("98765432100", "Ayşe", "Kara", 32, "Kadın", "Türk", "muhasebe", 48, 18000, 0.5)
-maviyaka3 = MaviYaka("55555555555", "Mehmet", "Demir", 26, "Erkek", "Türk", "inşaat", 24, 9000, 0.3)
+maviyaka1 = MaviYaka("12345678910", "Ali", "Yilmaz", 28, "Erkek", "Türk", "teknoloji", 36, 12000, 0.2)
+maviyaka2 = MaviYaka("98765432100", "Ayşe", "Kara", 32, "Kadin", "Türk", "muhasebe", 48, 18000, 0.5)
+maviyaka3 = MaviYaka("55555555555", "Kerem", "Akturk", 26, "Erkek", "Türk", "inşaat", 24, 9000, 0.3)
 
 # Mavi yaka nesnelerini __str__ metoduyla bilgilerini yazdırma
 print(maviyaka1)
@@ -44,7 +44,7 @@ print(maviyaka2)
 print(maviyaka3)
 
 # Beyaz yaka sınıfı için 3 nesne oluşturma
-beyazyaka1 = BeyazYaka("12345678910", "Ayşe", "Yılmaz", 28, "Kadın", "Türk", "teknoloji", 36, 12000, 500)
+beyazyaka1 = BeyazYaka("12345678910", "Ayşe", "Yilmaz", 28, "Kadin", "Türk", "teknoloji", 36, 12000, 500)
 beyazyaka2 = BeyazYaka("98765432100", "Ahmet", "Kara", 32, "Erkek", "Türk", "muhasebe", 48, 18000, 2500)
 beyazyaka3 = BeyazYaka("55555555555", "Mehmet", "Demir", 26, "Erkek", "Türk", "inşaat", 24, 9000, 1000)
 
