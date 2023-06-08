@@ -94,7 +94,7 @@ print(df_sorted)
 print("                                                            ")
 
 # Tecrübesi 3 seneden fazla olan Beyaz yakalıları bulma
-tecrube_limit = 3
+tecrube_limit = 35
 beyazyaka_tecrube = df[(df["Nesne"] == "Beyaz Yaka") & (df["Tecrübe"] > tecrube_limit)]
 print("Tecrubesi 3 yıldan fazla olan beyazyakalılar:")
 print(beyazyaka_tecrube)
