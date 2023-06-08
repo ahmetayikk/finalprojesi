@@ -5,7 +5,7 @@ from calisan import Calisan
 from maviyaka import MaviYaka
 from beyazyaka import BeyazYaka
 
-# Sadece insan sınıfı için 2 nesne oluşturma
+# insan sınıfı için 2 nesne oluşturma
 insan1 = Insan("12345678910", "Ahmet", "Ayik", 30, "Erkek", "Türk")
 insan2 = Insan("98765432100", "Mehmet", "Ayik", 25, "Erkek", "Türk")
 
