@@ -13,12 +13,12 @@ class MaviYaka(Calisan):
 
     def zam_hakki(self):
         try:
-            if self.get_tecrube() < 2:
-                return self.get_maas() * self.__yipranma_payi * 10
-            elif 2 <= self.get_tecrube() <= 4 and self.get_maas() < 15000:
-                return (self.get_maas() * self.get_tecrube() / 100) / 2 + self.__yipranma_payi * 10
-            elif self.get_tecrube() > 4 and self.get_maas() < 25000:
-                return (self.get_maas() * self.get_tecrube() / 100) / 3 + self.__yipranma_payi * 10
+            if self.get_tecrube() < 24:
+                return self.get_maas() * ((self.__yipranma_payi * 10)/100)
+            elif 24 <= self.get_tecrube() <= 48 and self.get_maas() < 15000:
+                return ((((self.get_maas() / self.get_tecrube() ) / 2 ) + self.__yipranma_payi * 10)/100)*self.get_maas()
+            elif self.get_tecrube() > 48 and self.get_maas() < 25000:
+                return ((((self.get_maas() / self.get_tecrube()) / 3) + self.__yipranma_payi * 10)/100)*self.get_maas()
             else:
                 return self.get_maas()
         except ValueError:

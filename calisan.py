@@ -35,12 +35,12 @@ class Calisan(Insan):
 
     def zam_hakki(self):
         try:
-            if self.__tecrube < 2:
+            if self.__tecrube < 24:
                 return 0
-            elif 2 <= self.__tecrube <= 4 and self.__maas < 15000:
-                return self.__maas * self.__tecrube / 100
-            elif self.__tecrube > 4 and self.__maas < 25000:
-                return (self.__maas * self.__tecrube) / 200
+            elif 24 <= self.__tecrube <= 48 and self.__maas < 15000:
+                return ((self.__maas / self.__tecrube) / 100 ) * self.__maas
+            elif self.__tecrube > 48 and self.__maas < 25000:
+                return (((self.__maas / self.__tecrube) / 2) / 100) * self.__maas
             else:
                 return self.__maas
         except Exception as e:

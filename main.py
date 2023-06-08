@@ -6,7 +6,7 @@ from maviyaka import MaviYaka
 from beyazyaka import BeyazYaka
 
 # insan sınıfı için 2 nesne oluşturma
-insan1 = Insan("12345678910", "Ahmet", "Ayik", 30, "Erkek", "Türk")
+insan1 = Insan("12345678910", "Ahmet", "Ayik", 20, "Erkek", "Türk")
 insan2 = Insan("98765432100", "Mehmet", "Ayik", 25, "Erkek", "Türk")
 
 # İnsan nesnelerini __str__ metoduyla bilgilerini yazdırma
@@ -100,7 +100,7 @@ print("Tecrubesi 3 yıldan fazla olan beyazyakalılar:")
 print(beyazyaka_tecrube)
 print("                                                                   ")
 
-# Yeni maaşı 10000 TL üzerinde olanlar için 2-5 satır arasındakileri tc_no ve yeni_maaş sütunlarını seçerek gösterme
+# Yeni maaşı 10000 TL üzerinde olanlar için tc_no ve yeni_maaş sütunlarını seçerek gösterme
 print("Yeni maasi 10000 TL uzerinde olanlar : ")
 yeni_maas_limit = 10000
 yeni_maas_ust_limit_df = df[df["Yeni Maaş"] > yeni_maas_limit][["Tc No", "Yeni Maaş"]]

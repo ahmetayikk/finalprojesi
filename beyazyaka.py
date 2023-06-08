@@ -13,12 +13,12 @@ class BeyazYaka(Calisan):
 
     def zam_hakki(self):
         try:
-            if self.get_tecrube() < 2:
-                return self.__tesvik_primi
-            elif 2 <= self.get_tecrube() <= 4 and self.get_maas() < 15000:
-                return (self.get_maas() * self.get_tecrube() / 100) * 5 + self.__tesvik_primi
-            elif self.get_tecrube() > 4 and self.get_maas() < 25000:
-                return (self.get_maas() * self.get_tecrube() / 100) * 4 + self.__tesvik_primi
+            if self.get_tecrube() < 24:
+                return self.__tesvik_primi + self.get_maas()
+            elif 24 <= self.get_tecrube() <= 48 and self.get_maas() < 15000:
+                return (((self.get_maas() / self.get_tecrube()) * 5) + self.__tesvik_primi ) + self.get_maas()
+            elif self.get_tecrube() > 48 and self.get_maas() < 25000:
+                return (((self.get_maas() / self.get_tecrube() ) *4 )+ self.__tesvik_primi ) + self.get_maas()
             else:
                 return self.get_maas()
         except ValueError:
